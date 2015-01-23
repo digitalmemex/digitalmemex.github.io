@@ -49,20 +49,20 @@
 <p>Make sure JAVA (JRE6 or higher) is installed on your system.</p>
 <p>Go to <a target="_blank" href=http://repo.digitalmemex.com/distribution/>http://repo.digitalmemex.com/distribution/</a> and download the latest SNAPSHOT release, unpack it, and run the enclosed start script from the ./bin/ directory (we currently only support Mac OS X and Linux).
 <p>Open <a target="_blank" href=http://localhost:17071/de.deepamehta.webclient/>http://localhost:17071/de.deepamehta.webclient/</a> in your browser and login in as 'admin' without password.</p>
- 
+<p>Change to the DMX dashboard <a target="_blank" href=http://localhost:17071/de.deepamehta.webclient/>http://localhost:17071/dmx/</a> to install or update further applications (apps).</p>  
 <h3><a id="Users Guide" class="anchor" href="#users guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Users Guide to Backend</h3>
 <h3><a id="Users Guide" class="anchor" href="#users guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Users Guide to Dashboard</h3>
 <h3><a id="Install Apps" class="anchor" href="#install apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Apps</h3>
 <h3><a id="Install Plugins" class="anchor" href="#install plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Plugins</h3>
 <h3><a id="Install Apps" class="anchor" href="#install apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update Plugins</h3>
-<h5> Core plugins</h5>
+<h5>Core plugins</h5>
 
 <ul>
-<li> Download plugin from <a href="http://repo.digitalmemex.com/"> http://repo.digitalmemex.com/ </a></p>
-<li> Conect to karaf console <p><code> ssh karaf@localhost -p 8101 </code> or <code>http://localhost:17071/system/console</code></p>
-<li> Detect existing plugin by <code>$list -u</code> </li>
+<li>Download plugin from <a href="http://repo.digitalmemex.com/"> http://repo.digitalmemex.com/ </a></p>
+<li>Conect to karaf console <p><code> ssh karaf@localhost -p 8101 </code> or <code>http://localhost:17071/system/console</code> with username 'karaf' and password 'karaf'. You can change the username and password in ./etc/users.properties</p>
+<li>Detect existing plugin by <code>$list -u</code> </li>
 <li>Uninstall <code>$uninstall bundle_number</code></li>
-<li> Replace the archive in system folder inside <code>system/org/digitalmemex</code></li>
+<li>Replace the archive in system folder inside <code>system/org/digitalmemex</code></li>
 <li>Install bundle <code>$install mvn:org.digitalmemex/plugin_name/plugin_version</code></li>
 <li>Start bundle <code>$start bundle_number</code></li>
 </ul>
