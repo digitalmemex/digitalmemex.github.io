@@ -19,9 +19,9 @@
           <a id="forkme_banner" href="https://github.com/digitalmemex">View on GitHub</a>
 
           <!-- h1 id="project_title">digitalmemex.github.io</h1-->
-          <img src="/images/DMX_logo_h2.png" width="340" title="DMX" alt="Logo: DMX" />
+          <img src="/images/DMX_sliderlogo_square_white.png" width="340" title="DMX" alt="Logo: DMX" />
           <h2 id="project_tagline">
-            Documentation<br/>
+            App Development Documentation<br/>
             (work in progress)
           </h2>
 
@@ -53,33 +53,43 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the DIGITAL MEMEX glossary.</h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+          <span class="octicon octicon-link"></span></a>
+          Welcome to the DIGITAL MEMEX glossary
+        </h3>
 
-<ul>
-  <li><strong>Application</strong>: Programm that visualizes data in a particular way</li>
-  <li><strong>Plugin</strong>: Extra functionality of DeepaMehta backend</li>
-  <li><strong>Backend</strong>: the data access layer of an applicacion</li>
-  <li><strong>Frontend</strong>: The presentation layer of an application</li>
-  <li><strong>REST</strong>: REpresentational State Transfer is an architectural style, and an approach to communications that is often used in the development of Web services</li>
-  <li><strong>API</strong>: a set of functions and procedures that allow the creation of applications which access the features or data of another application.</li>
-  <li><strong>Graph database</strong>: a database where the structure of the data is a graph/map</li>
-  <li><strong>Instance</strong></li>
-  <li><strong>Workspace</strong>:  topmost container for our content</li>
-  <li><strong>Topicmap</strong>: it shows network structures, consisting of topics(the little balls) and associations(the lines) </li>
-  <li><strong>Association</strong>:  represents relationships between topics</li>
-  <li><strong>Topic</strong>: represents any concept, from people, countries, and organizations to software modules, individual files, and events</li>
-  <li><strong>Type</strong>: are simple or complex structures describing how information is represented in a machine</li>
-  <li><strong>Topic type</strong>:  represent items of certain type</li>
-  <li><strong>Association Type</strong>: represent relations between items</li>
-  <li><strong>Data type</strong>:  classification of various types of data(in DeepaMehta, Number, Boolean, Text, HTML, Composite)</li>
-  <li><strong>Composite</strong>: a data type that allows to store more complex types of data</li>
-  <li><strong>Composition Definition</strong>: establishes a strong, direct dependence of the child to the parent type</li>
-  <li><strong>Aggregation Definition</strong>: establishes a loose dependence of the child to its parent type</li>
-  <li></li>
-  <li></li>
-</ul>
+        <p>Here we highlight some key concepts for building an app with DMX.</p>
 
+        <ul>
+          <li><strong>Workspace</strong>: a context for your information, aggregating one or many <em>Members</em> implementing <em>one</em> specific <em>SharingMode</em></li>
+          <li><strong>Topicmap</strong>: visual content stored independently of any other content made up of topics (all the little items) and associations (the lines between)</li>
+          <li><strong>Type</strong>: a <em>simple</em> or <em>composite</em> structure describing how information is represented in your machine</li>
+          <li><strong>Topic</strong>: an item of a specific <em>Type</em> representing concepts like an e-mail, a country, an organization, an individual file, an event or a software-module</li>
+          <li><strong>Association</strong>: a relationship of a specific <em>type</em> between two <em>topics</em> where each of the two topic plays a certain <em>Role</em></li>
+          <li><strong>Role Type</strong>: an identifier for a role each two <em>Topic</em> plays in the resp. <em>Association</em></li>
+          <li><strong>Topic Type</strong>: describing the data model/structure of any given <em>Topic</em></li>
+          <li><strong>Association Type</strong>: describing the data model/structure of any given <em>Association</em> between two <em>Topics</em></li>
+          <li><strong>Instance</strong>: an internal (a "systems") <em>Association</em> connecting the <em>Topic</em> or <em>Association</em> with its resp. <em>Type</em></li>
+          <li><strong>Data type</strong>: classification of the fundamental types of of data: <em>Number</em>, <em>Boolean</em>, <em>Text</em>, <em>HTML</em>, <em>Composite</em></li>
+          <li><strong>Composite</strong>: a <em>Data Type</em> that allows to store more complex types of data, a type which <em>composes</em> or <em>aggregates</em> other types in a cardinality of <em>one</em> or <em>many</em></li>
+          <li><strong>Composition Definition</strong>: establishes a strong, direct dependence of the <em>Child Type</em> to the <em>Parent Type</em></li>
+          <li><strong>Aggregation Definition</strong>: establishes a loose dependence of the <em>Child Type</em> to its <em>Parent Type</em></li>
+        </ul>
 
+        <p>Some more general terms we may use in this documentation but which are not specific to app development wit DMX:</p>
+
+        <ul>
+          <li><strong>Graph database</strong>: the storage layer structuring your data as nodes and edges</li>
+          <li><strong>Frontend</strong>: the presentation layer of your application</li>
+          <li><strong>Application</strong>: Programm that visualizes data in a particular way</li>
+          <li><strong>Plugin</strong>: A module which bundles extra functionality for your application</li>
+          <li><strong>Backend</strong>: The data access and service layer of your application</li>
+          <li><strong>REST</strong>: REpresentational State Transfer is an architectural style, and an approach to HTTP communications that is often used in the development of Web services</li>
+          <li><strong>API</strong>: Application programming interfaces are used to realize inter-application communications</li>
+        </ul>
+
+      </section>
+    </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">

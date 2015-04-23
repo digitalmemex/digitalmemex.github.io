@@ -49,18 +49,24 @@ table {
 DMX Styles
 *******************************************************************************/
 
-.navbar-header{
+.navbar-header {
   padding: 1.2em;
 }
 
-.menu ul{
+.menu ul {
   text-align: center;
   list-style-type: none;
 }
 
-.menu li{
-  padding: 2em;
+.menu li {
+  padding: 10px;
   display: inline;
+  display: inline-block;
+  z-index: 10;
+  position: relative;
+  top: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu ul {
@@ -69,23 +75,21 @@ DMX Styles
 
 li.active {
   background-color: #0090ff;
-  font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  display: inline-block;
-  z-index: 10;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-  top: 1px;
 }
 
-.menu li:hover a,
-li.active a {
+.menu li a {
   color: #fff;
   text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #0090ff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 /*******************************************************************************/
