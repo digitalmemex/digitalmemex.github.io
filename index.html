@@ -94,7 +94,7 @@
 
         <p>Change to the DMX Repository Manager UI <a target="_blank" href=http://localhost:17071/dmx/>http://localhost:17071/dmx/</a> to <em>install</em>, <em>open</em> or <em>update</em> existing DMX applications.</p> 
 
-        <h3><a id="Install apps" class="anchor" href="#install apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Apps</h3>
+        <h3><a id="Install apps" class="anchor" href="#installapps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Apps</h3>
         <ul>
           <li>Switch to the "Database" view from the DMX dashboard</a>
           <li>Log in as 'admin' without password.</li>
@@ -106,12 +106,15 @@
           <li>Next, an "Open app" button should appear next to your repository.</li>
         </ul>
 
-        <h3><a id="Install plugins" class="anchor" href="#install plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Plugins</h3>
+        <h3><a id="Install plugins" class="anchor" href="#installplugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Plugins</h3>
         <p>
-          To install DM4 plugins you just need to <a id="DM4 plugins" href="http://download.deepamehta.de/"> download </a> the plugin's .jar file. Then copy it to the <em>deploy</em> directory of your DMX instance, the plugin should get hot-deployed (automatically installed/started).
+          Any DeepaMehta 4.5 plugin is compatible with our latest DMX-SNAPSHOT release. You just need to <a id="DM4 plugins" href="http://download.deepamehta.de/">download</a> the plugin's .jar file and copy it to the <em>/deploy</em> directory of your DMX instance. You can even do so while your DMX machine is up and running, the plugin should then get hot-deployed (automatically installed + started).
+        </p>
+        <p>
+          If you cannot build and code what you want as a DMX app, e.g. you want to implement your own business logic at server-side or you need to provide a custom HTTP endpoint to go further with your frontend, you will need to write some backend code in Java and bundle the web-service for your frontend as a DM4 plugin. The <a href="https://trac.deepamehta.de/wiki/PluginDevelopmentGuide">DM 4 Plugin Development Guide</a> will get you started building a DM 4 plugin for your DMX app.
         </p>
 
-        <h3><a id="Install Apps" class="anchor" href="#install apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update Plugins</h3>
+        <h3><a id="Install Apps" class="anchor" href="#installdmx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update Plugins</h3>
 
         <ul>
           <li>Download new version of plugin from <a href="http://repo.digitalmemex.com/"> http://repo.digitalmemex.com/ </a>
